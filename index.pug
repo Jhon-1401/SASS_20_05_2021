@@ -1,0 +1,20 @@
+doctype html
+html(lang="sp")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        title SASS 20 05 2021
+    body
+        //- mixin cajas(name)
+        //-     div
+        //-         h1= name
+        //- +cajas("Hola Mundo")
+        //- +cajas('Hola Mundo2')
+        //- +cajas('Hola Mundo3')
+        div(class="hola")
+            mixin transciciones(name)
+                div= name
+            - for (var x = 0; x < 6; x++)
+                +transciciones("transision"+x)

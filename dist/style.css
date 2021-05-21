@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  padding-top: 20px;
+  background: #9c9c9c;
+  height: 500vh;
+}
+div div {
+  width: 120px;
+  height: 120px;
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  background: chartreuse;
+}
+div div:nth-of-type(2) {
+  background: chocolate;
+  position: relative;
+  left: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+div div:nth-of-type(2):active {
+  left: 90%;
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+div div:nth-of-type(3) {
+  background: #0f0f0f;
+  position: relative;
+  left: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+div div:nth-of-type(3):active {
+  left: 90%;
+  background: cornflowerblue;
+}
+div div:nth-of-type(4) {
+  background: blue;
+  position: relative;
+  left: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+div div:nth-of-type(4):active {
+  left: 90%;
+  background: cornflowerblue;
+}
+div div:nth-of-type(5) {
+  background: #aa0d83;
+  position: relative;
+  left: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+div div:nth-of-type(5):active {
+  left: 90%;
+  background: cornflowerblue;
+}
+div div:nth-of-type(6) {
+  background: #0c8dc0;
+  position: relative;
+  left: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 5s;
+          transition-duration: 5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+div div:nth-of-type(6):active {
+  left: 90%;
+  background: cornflowerblue;
+}

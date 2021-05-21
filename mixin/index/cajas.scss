@@ -1,0 +1,23 @@
+@mixin caja($colores,$color) {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: $colores;
+    h1{
+        color: $color;
+        display: inline-block;  
+        // background: $color_fondo3;
+    }
+}
+
+
+@mixin transisiones() {
+    // margin-top: 20px;
+    // display: block;
+    width: 120px;
+    height: 120px;
+    color: cornsilk;
+    margin-bottom: 20px;
+    text-align: center;
+}

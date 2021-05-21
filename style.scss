@@ -1,0 +1,91 @@
+@import "colores/_variables.scss";
+@import "mixin/index/cajas.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+// div{
+//     @include caja($color_fondo, $color);
+// }
+// div:nth-of-type(2){
+//     @include caja($color_fondo2, $color2);
+// }
+// div:nth-of-type(3){
+//     @include caja($color_fondo3, $color3);
+// }
+
+div{
+    padding-top: 20px;
+    background: rgb(156, 156, 156);
+    height: 500vh;
+    div{
+        @include transisiones();
+        background: chartreuse;
+    }
+    
+    div:nth-of-type(2){
+        background: chocolate;
+        position: relative;
+        left: 0;
+        transition: all;
+        transition-duration: 2s ;
+        transition-timing-function: linear;
+    }
+    div:nth-of-type(2):active{
+        left: 90%;
+        background-color: #FFCCCC;
+        width: 200px;
+        height: 200px;
+        transform: rotate(180deg);
+    }
+    div:nth-of-type(3){
+        background: rgb(15, 15, 15);
+        position: relative;
+        left: 0;
+        transition: all;
+        transition-duration: 5s;
+        transition-timing-function: ease;
+    }
+    div:nth-of-type(3):active{
+        left: 90%;
+        background: cornflowerblue;
+    }
+    div:nth-of-type(4){
+        background: blue;
+        position: relative;
+        left: 0;
+        transition: all;
+        transition-duration: 5s;
+        transition-timing-function:  ease-in;
+    }
+    div:nth-of-type(4):active{
+        left: 90%;
+        background: cornflowerblue;
+    }
+    div:nth-of-type(5){
+        background: rgb(170, 13, 131);
+        position: relative;
+        left: 0;
+        transition: all;
+        transition-duration: 5s;
+        transition-timing-function: ease-out;
+    }
+    div:nth-of-type(5):active{
+        left: 90%;
+        background: cornflowerblue;
+    }
+    div:nth-of-type(6){
+        background: rgb(12, 141, 192);
+        position: relative;
+        left: 0;
+        transition: all;
+        transition-duration: 5s;
+        transition-timing-function: ease-in-out;
+    }
+    div:nth-of-type(6):active{
+        left: 90%;
+        background: cornflowerblue;
+    }
+}
